@@ -1,4 +1,4 @@
-# ✨ Vinted Clone
+# Frip | Createk
 
 ![Logo](Frip.png)
 
