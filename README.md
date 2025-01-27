@@ -1,5 +1,7 @@
 # Frip | Createk
 
+![Logo](Frip.png)
+
 ## Description
 Cette application est une plateforme permettant aux utilisateurs d'acheter et de vendre des vêtements et articles vintage. Chacun peut agir comme vendeur ou acheteur, offrant ainsi une expérience communautaire et fluide. Le projet inclut une version web et une version mobile pour maximiser l'accessibilité.
 
