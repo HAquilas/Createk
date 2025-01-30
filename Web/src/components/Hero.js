@@ -198,7 +198,7 @@ export default function Hero() {
   const [searchQuery, setSearchQuery] = useState("")
 
   return (
-    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-blue-50">
+    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-yellow-50">
       <div className="absolute inset-0 z-0">
         <svg
           className="absolute bottom-0 left-0 right-0 w-full"
@@ -226,9 +226,9 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-5xl md:text-6xl font-bold text-blue-800 mb-6 leading-tight"
           >
-            Donnez une seconde vie 
-            <Recycle className="inline-block mx-2 -mt-2 text-blue-800" size={70} />
-            <br/>aux vêtements
+            C'est les kargo ? On a tous ici chef, commande ton truc seulement.
+            {/* <Recycle className="inline-block mx-2 -mt-2 text-blue-800" size={70} /> */}
+            <br/>
             {/* <Image
               src="/placeholder.svg?height=52&width=52"
               alt="recycle"
@@ -285,7 +285,7 @@ export default function Hero() {
               transformStyle: "preserve-3d",
             }}
           >
-            <Card className="bg-white rounded-2xl shadow-xl p-6 relative z-10">
+            <Card className="bg-orange-300 rounded-2xl shadow-xl p-6 relative z-10">
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
                   <Image
@@ -318,7 +318,7 @@ export default function Hero() {
                   <p className="text-blue-800 font-semibold">Robes</p>
                 </div>
               </div>
-              <Button className="mt-6 w-full bg-blue-100 hover:bg-blue-200 text-blue-800 px-6 py-2.5 h-auto rounded-lg font-normal">
+              <Button className="mt-6 w-full bg-blue-800 hover:bg-blue-200 text-white px-6 py-2.5 h-auto rounded-lg font-normal">
                 Voir toutes les catégories
               </Button>
             </Card>
