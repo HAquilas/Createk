@@ -189,6 +189,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import { Recycle } from "lucide-react"
 import { Button } from "../components/ui/button"
 import { Card } from "../components/ui/card"
 import { Search } from "lucide-react"
@@ -225,15 +226,16 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="text-5xl md:text-6xl font-bold text-blue-800 mb-6 leading-tight"
           >
-            Donnez une seconde vie{" "}
-            <Image
+            Donnez une seconde vie 
+            <Recycle className="inline-block mx-2 -mt-2 text-blue-800" size={70} />
+            à vos vêtements
+            {/* <Image
               src="/placeholder.svg?height=52&width=52"
               alt="recycle"
               width={52}
               height={52}
               className="inline-block mx-2 -mt-2"
-            />{" "}
-            à vos vêtements
+            /> */}
           </motion.h1>
 
           <motion.p
