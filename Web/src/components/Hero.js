@@ -228,7 +228,7 @@ export default function Hero() {
           >
             Donnez une seconde vie 
             <Recycle className="inline-block mx-2 -mt-2 text-blue-800" size={70} />
-            à vos vêtements
+            <br/>aux vêtements
             {/* <Image
               src="/placeholder.svg?height=52&width=52"
               alt="recycle"
@@ -289,31 +289,31 @@ export default function Hero() {
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
                   <Image
-                    src="/placeholder.svg?height=120&width=120"
+                    src="/t-shirt.jpg"
                     alt="T-shirt"
                     width={120}
                     height={120}
-                    className="mx-auto rounded-lg mb-2"
+                    className="mx-auto rounded-lg mb-7 mt-6"
                   />
                   <p className="text-blue-800 font-semibold">T-shirts</p>
                 </div>
                 <div className="text-center">
                   <Image
-                    src="/placeholder.svg?height=120&width=120"
+                    src="/jeans.jpg"
                     alt="Jeans"
                     width={120}
                     height={120}
-                    className="mx-auto rounded-lg mb-2"
+                    className="mx-auto rounded-lg mb-2 mt-4"
                   />
                   <p className="text-blue-800 font-semibold">Jeans</p>
                 </div>
                 <div className="text-center">
                   <Image
-                    src="/placeholder.svg?height=120&width=120"
+                    src="/robe.jpg"
                     alt="Robes"
-                    width={120}
-                    height={120}
-                    className="mx-auto rounded-lg mb-2"
+                    width={150}
+                    height={150}
+                    className="mx-auto rounded-lg mb-2 mt-4"
                   />
                   <p className="text-blue-800 font-semibold">Robes</p>
                 </div>

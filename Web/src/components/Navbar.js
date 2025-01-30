@@ -9,34 +9,34 @@ export default function Navbar() {
   const { data: session } = useSession()
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-white/80 backdrop-blur-md z-50">
+    <nav className="fixed top-0 left-0 right-0 bg-blue-950 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
-                src="/logo.svg" 
+                src="/Frip.png" 
                 alt="FormCarry Logo" 
                 width={130} 
-                height={32} 
-                className="h-8 w-auto"
+                height={50} 
+                className="h-15 w-auto"
               />
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-8">
-            <Link href="/examples" className="text-sm text-gray-600 hover:text-gray-900">
+          <div className="hidden md:flex items-center space-x-8 text-white">
+            <Link href="/examples" className="text-sm hover:text-gray-400">
               Examples
             </Link>
-            <Link href="/boutique" className="text-sm text-gray-600 hover:text-gray-900">
+            <Link href="/boutique" className="text-sm hover:text-gray-400">
               Boutique
             </Link>
             {session ? (
               <>
-                <Link href="/panier" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="/panier" className="text-sm hover:text-gray-400">
                   Panier
                 </Link>
-                <Link href="/commandes" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="/commandes" className="text-sm hover:text-gray-400">
                   Mes commandes
                 </Link>
                 <Link 
@@ -49,12 +49,12 @@ export default function Navbar() {
               </>
             ) : (
               <>
-                <Link href="/login" className="text-sm text-gray-600 hover:text-gray-900">
+                <Link href="/login" className="text-sm hover:text-gray-400">
                   Connexion
                 </Link>
                 <Link 
                   href="/register" 
-                  className="text-sm bg-primary text-white px-4 py-2 rounded-lg hover:bg-primary-dark transition-colors"
+                  className="text-sm bg-yellow-500 text-black px-4 py-2 rounded-lg hover:bg-yellow-600 transition-colors"
                 >
                   Inscription
                 </Link>
