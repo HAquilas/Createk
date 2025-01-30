@@ -36,8 +36,8 @@
       
 //       <div className="max-w-7xl mx-auto relative z-10">
 //         <div className="text-center mb-16">
-//           <div className="inline-block bg-blue-50 rounded-full px-4 py-2 mb-4">
-//             <span className="text-sm font-medium text-blue-600">FORM API</span>
+//           <div className="inline-block bg-green-50 rounded-full px-4 py-2 mb-4">
+//             <span className="text-sm font-medium text-green-600">FORM API</span>
 //           </div>
           
 //           <motion.h1 
@@ -104,7 +104,7 @@
 //                 />
 //               </div>
 //               <div className="px-3 py-2">
-//                 <button className="bg-[#0E54FF] text-white px-8 py-3 rounded-[20px] hover:bg-blue-700 transition-colors font-medium text-base shadow-sm">
+//                 <button className="bg-[#0E54FF] text-white px-8 py-3 rounded-[20px] hover:bg-green-700 transition-colors font-medium text-base shadow-sm">
 //                   Get Started
 //                 </button>
 //               </div>
@@ -172,7 +172,7 @@
 
 //         {/* Background Card Effect */}
 //         <div
-//           className="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-white rounded-2xl transform -rotate-2 scale-[1.02] -z-10"
+//           className="absolute inset-0 bg-gradient-to-b from-green-50/50 to-white rounded-2xl transform -rotate-2 scale-[1.02] -z-10"
 //           style={{
 //             transformOrigin: "center center -40px",
 //           }}
@@ -198,7 +198,7 @@ export default function Hero() {
   const [searchQuery, setSearchQuery] = useState("")
 
   return (
-    <section className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-yellow-50">
+    <section className="pt-14 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden bg-yellow-50">
       <div className="absolute inset-0 z-0">
         <svg
           className="absolute bottom-0 left-0 right-0 w-full"
@@ -216,18 +216,18 @@ export default function Hero() {
 
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
-          <div className="inline-block bg-blue-100 rounded-full px-4 py-2 mb-4">
-            <span className="text-sm font-medium text-blue-600">FRIPERIE EN LIGNE</span>
-          </div>
+          {/* <div className="inline-block bg-green-100 rounded-full px-4 py-2 mb-4">
+            <span className="text-sm font-medium text-green-600">MISSEBO EN LIGNE</span>
+          </div> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-5xl md:text-6xl font-bold text-blue-800 mb-6 leading-tight"
+            className="text-5xl md:text-6xl font-bold text-black mb-6 leading-tight"
           >
             C'est les kargo ? On a tous ici chef, commande ton truc seulement.
-            {/* <Recycle className="inline-block mx-2 -mt-2 text-blue-800" size={70} /> */}
+            {/* <Recycle className="inline-block mx-2 -mt-2 text-green-800" size={70} /> */}
             <br/>
             {/* <Image
               src="/placeholder.svg?height=52&width=52"
@@ -242,10 +242,9 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-lg text-blue-700 mb-12 max-w-2xl mx-auto"
+            className="text-lg text-green-700 mb-12 max-w-2xl mx-auto"
           >
-            Découvrez notre collection unique de vêtements de seconde main. Économisez de l'argent tout en préservant la
-            planète.
+            Découvrez toute la collection unique de vêtements missebo depuis <span className="text-green-600 font-bold">Frip</span>. Payez vos articles depuis le confort de votre maison.
           </motion.p>
 
           <motion.div
@@ -268,7 +267,7 @@ export default function Hero() {
                 />
               </div>
               <div className="px-3 py-2">
-                <button className="bg-blue-600 text-white px-8 py-3 rounded-[20px] hover:bg-blue-700 transition-colors font-medium text-base shadow-sm">
+                <button className="bg-yellow-500 text-black px-8 py-3 rounded-[20px] hover:bg-green-700 transition-colors font-medium text-base shadow-sm">
                   Rechercher
                 </button>
               </div>
@@ -285,7 +284,7 @@ export default function Hero() {
               transformStyle: "preserve-3d",
             }}
           >
-            <Card className="bg-orange-300 rounded-2xl shadow-xl p-6 relative z-10">
+            <Card className="bg-yellow-50 rounded-2xl shadow-xl p-6 relative z-10">
               <div className="grid grid-cols-3 gap-4">
                 <div className="text-center">
                   <Image
@@ -295,7 +294,7 @@ export default function Hero() {
                     height={120}
                     className="mx-auto rounded-lg mb-7 mt-6"
                   />
-                  <p className="text-blue-800 font-semibold">T-shirts</p>
+                  <p className="text-green-800 font-semibold">T-shirts</p>
                 </div>
                 <div className="text-center">
                   <Image
@@ -305,7 +304,7 @@ export default function Hero() {
                     height={120}
                     className="mx-auto rounded-lg mb-2 mt-4"
                   />
-                  <p className="text-blue-800 font-semibold">Jeans</p>
+                  <p className="text-green-800 font-semibold">Jeans</p>
                 </div>
                 <div className="text-center">
                   <Image
@@ -315,17 +314,17 @@ export default function Hero() {
                     height={150}
                     className="mx-auto rounded-lg mb-2 mt-4"
                   />
-                  <p className="text-blue-800 font-semibold">Robes</p>
+                  <p className="text-green-800 font-semibold">Robes</p>
                 </div>
               </div>
-              <Button className="mt-6 w-full bg-blue-800 hover:bg-blue-200 text-white px-6 py-2.5 h-auto rounded-lg font-normal">
+              <Button className="mt-6 w-full bg-green-950 hover:bg-green-700 text-white px-6 py-2.5 h-auto rounded-lg font-normal">
                 Voir toutes les catégories
               </Button>
             </Card>
 
             {/* Background Card Effect */}
             <div
-              className="absolute inset-0 bg-gradient-to-b from-blue-100/50 to-white rounded-2xl transform -rotate-2 scale-[1.02] -z-10"
+              className="absolute inset-0 bg-gradient-to-b from-green-100/50 to-white rounded-2xl transform -rotate-2 scale-[1.02] -z-10"
               style={{
                 transformOrigin: "center center -40px",
               }}
