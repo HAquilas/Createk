@@ -77,7 +77,7 @@ export default function PromoBar() {
                 >
                   Trouvez des tenues stylées avec seulement 2 500 fcfa
                 </motion.h2>
-                <Button className="bg-black hover:bg-green-800 text-white">
+                <Button className="bg-black hover:bg-gray-700 text-white">
                   Voir les offres
                 </Button>
               </div>

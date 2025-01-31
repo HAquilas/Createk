@@ -14,8 +14,8 @@ export default function HomePage() {
       <main>
         <PromoBar/>
         <Hero />
-        <Setup />
-        <Features />
+        {/* <Setup /> */}
+        {/* <Features /> */}
       </main>
       <Footer/>
     </div>

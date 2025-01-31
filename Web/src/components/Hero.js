@@ -267,7 +267,7 @@ export default function Hero() {
                 />
               </div>
               <div className="px-3 py-2">
-                <button className="bg-yellow-500 text-black px-8 py-3 rounded-[20px] hover:bg-green-700 transition-colors font-medium text-base shadow-sm">
+                <button className="bg-yellow-500 text-black px-8 py-3 rounded-[20px] hover:bg-yellow-600 transition-colors font-medium text-base shadow-sm">
                   Rechercher
                 </button>
               </div>
