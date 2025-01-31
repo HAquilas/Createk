@@ -23,3 +23,28 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     _pageController.dispose();
     super.dispose();
   }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              Expanded(
+                child: PageView.builder(
+                  itemCount: onboards.length,
+                  controller: _pageController,
+                  onPageChanged: (index) {
+                    setState(() {
+                      _pageIndex = index;
+                    });
+                  },
+                  itemBuilder: (context, index) => OnBoardContent(
+                    image: onboards[index].image,
+                    title: onboards[index].title,
+                    description: onboards[index].description
+                  ),
+                ),
+              ),
