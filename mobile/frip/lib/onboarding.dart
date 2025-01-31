@@ -17,3 +17,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     _pageController = PageController(initialPage: 0);
     super.initState();
   }
+
+  @override
+  void dispose() {
+    _pageController.dispose();
+    super.dispose();
+  }
