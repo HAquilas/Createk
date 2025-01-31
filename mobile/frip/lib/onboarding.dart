@@ -48,3 +48,41 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   ),
                 ),
               ),
+              Row(
+                children: [
+                  ...List.generate(
+                    onboards.length, 
+                    (index) => Padding(
+                      padding: EdgeInsets.only(right: 4),
+                      child: DotIndicator(
+                        isActive: index == _pageIndex,
+                      ),
+                    )
+                  ),
+                  const Spacer(),
+                  SizedBox(
+                    width: 60,
+                    height: 60,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        _pageController.nextPage(
+                          duration: const Duration(milliseconds: 300),
+                          curve: Curves.ease
+                        );
+                      },
+                      child: SvgPicture.asset("assets/icons/Arrow - Right.svg"),
+                      style: ElevatedButton.styleFrom(
+                        shape: const CircleBorder()
+                      ),
+                      
+                    )
+                  ),
+                ],
+              )
+            ],
+          )
+        )
+      )
+    );
+  }
+}
