@@ -117,3 +117,60 @@ class Onboard {
     required this.description
   });
 }
+
+final List<Onboard> onboards = [
+  Onboard(
+    image: "assets/images/buyonline.png",
+    title: "C'est les cargos, les bajis ? Y'a les bons bails pour toi !!",
+    description: "Yanvitché, y'a rien que tu ne vas pas trouver ici, find your stuffs and drip drip bruv; la petite au tier-qua va pas capter"
+    ),
+    Onboard(
+      image: "assets/images/online-shopping.png",
+      title: "Achetez en toute confiance, adjotô lè royéé",
+      description: "Des paiements sécurisés et un suivi de livraison fiable pour une expérience shopping sans souci. La mode durable, c’est par ici !"
+    ),
+    Onboard(
+      image: "assets/images/shop.png",
+      title: "Vendez en toute simplicité",
+      description: "Mettez vos articles en ligne en quelques clics et connectez-vous à une communauté d’acheteurs passionnés. Gagnez de l'argent en désencombrant votre garde-robe !"
+    )
+];
+
+class OnBoardContent extends StatelessWidget {
+  const OnBoardContent({
+    Key? key,
+    required this.image,
+    required this.title,
+    required this.description,
+  }) : super(key: key);
+
+  final String image, title, description;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        const Spacer(),
+        Image.asset(
+          image,
+          height: 300,
+        ),
+        const Spacer(),
+        Text(
+          title,
+          textAlign: TextAlign.center,
+          style: Theme.of(context)
+          .textTheme
+          .headlineSmall!
+          .copyWith(fontWeight: FontWeight.bold),
+        ),
+        const SizedBox(height: 20),
+        Text(
+          description,
+          textAlign: TextAlign.center
+        ),
+        const Spacer(),
+      ],
+    );
+  }
+}
