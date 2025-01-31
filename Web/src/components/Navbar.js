@@ -11,7 +11,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 bg-green-950 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-14">
           <div className="flex items-center">
             <Link href="/" className="flex items-center">
               <Image 
@@ -19,7 +19,7 @@ export default function Navbar() {
                 alt="FormCarry Logo" 
                 width={130} 
                 height={50} 
-                className="h-15 w-auto"
+                className="h-15 w-auto mt-2"
               />
             </Link>
           </div>
