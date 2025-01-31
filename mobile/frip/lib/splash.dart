@@ -16,3 +16,10 @@ class _SplashScreenState extends State<SplashScreen> {
     super.initState();
     _isFirstTime();
   }
+
+  @override
+  void dispose() {
+    _mounted = false;
+    super.dispose();
+  }
+
