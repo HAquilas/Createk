@@ -86,3 +86,9 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     );
   }
 }
+
+class DotIndicator extends StatelessWidget {
+  const DotIndicator({
+    super.key,
+    this.isActive = false
+  });
