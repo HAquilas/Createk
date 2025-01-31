@@ -7,3 +7,13 @@ class OnboardingScreen extends StatefulWidget {
   @override
   State<OnboardingScreen> createState() => _OnboardingScreenState();
 }
+
+class _OnboardingScreenState extends State<OnboardingScreen> {
+  late PageController _pageController;
+
+  int _pageIndex = 0;
+  @override
+  void initState() {
+    _pageController = PageController(initialPage: 0);
+    super.initState();
+  }
